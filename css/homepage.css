@@ -6,26 +6,28 @@ body {
     margin: 0; border: 0; 
     font-family:"Lato", sans-serif;
     font-size: 1.5rem;
-    color:#1E90FF; background-color: #FFFAFA;
+    color:#1E90FF; background-color: #FFF5EE;
 }
 
 #page {
+    display: grid; 
+    column-gap: 20px;
     width: 100vw; height: auto; 
 }
+
 .section {
-    padding: 2.5% 2.5%;
-    margin: 25px 0px; 
     display: flex; 
 }
 
 #works {
     margin-top: 125px;
 }
+
 #header {
     padding: 0 0; 
     position: fixed;
     top: 0; margin-top: 0%;
-    background-color: #1E90FF; color: #FFFAFA;
+    background-color: #1E90FF; color: #FFF5EE;
     width: 100vw; height: auto;
 
 }
@@ -35,4 +37,28 @@ body {
     width: 100vw; height: auto; 
 }
 
+#navbar {
+    position: relative; 
+    list-style-type: none;
+}
 
+a {
+    text-decoration: none; color: inherit; 
+}
+
+.page_link {
+    display: inline-block; margin-right: 10px; 
+}
+
+ul {
+    padding-top: 0; padding-bottom:  0;
+}
+
+.video {
+    width: 50vw; 
+    background-color: #FFDEAD;
+}
+
+h4, h5, h6 {
+    color: #FFA500; 
+}
