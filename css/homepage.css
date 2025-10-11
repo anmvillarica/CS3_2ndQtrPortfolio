@@ -9,14 +9,13 @@ body {
     color:#1E90FF; background-color: #FFF5EE;
 }
 
-#vid1 { grid-area: video1; }
+#animation1 { grid-area: animation1; }
 #text1 { grid-area: text1; }
 #text2 { grid-area: text2; }
-#vid2 { grid-area: video2; }
+#animation2 { grid-area: animation2; }
 #footer { grid-area: footer; }
 
 #page {
-    padding: 2.5% 2.5% 2.5% 2.5%; 
     width: 100vw; height: auto; 
     margin-top: 150px; 
     display: grid; 
@@ -24,8 +23,8 @@ body {
     grid-template-columns: 47vw 47vw;
     grid-template-rows: 36vh 36vh 18vh;
     grid-template-areas:
-        'video1 text1'
-        'text2 video2'
+        'animation1 text1'
+        'text2 animation2'
         'footer footer';
 }
 
@@ -40,8 +39,7 @@ body {
 }
 
 #footer {
-    text-align: center; width: 100vw;
-    padding: 2.5% 2.5%; 
+    text-align: center; width: 100vw;z
 }
 
 #navbar {
@@ -61,10 +59,16 @@ ul {
     padding-top: 0; padding-bottom:  0;
 }
 
-#vid1, #vid2 { 
-    background-color: #FFDEAD;
+#animation1, #animation2 { 
+    display: block;
+    position: relative; 
 }
 
 h4, h5, h6 {
     color: #FFA500; 
+}
+
+.wada {
+    height: 500px; width: auto; 
+    position: absolute; 
 }
