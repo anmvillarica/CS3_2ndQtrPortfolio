@@ -9,24 +9,29 @@ body {
     color:#1E90FF; background-color: #FFF5EE;
 }
 
-#animation1 { grid-area: animation1; }
-#text1 { grid-area: text1; }
-#text2 { grid-area: text2; }
-#animation2 { grid-area: animation2; }
-#footer { grid-area: footer; }
-
 #page {
+    position: static; 
     width: 100vw; height: auto; 
     margin-top: 150px; 
     display: grid; 
     column-gap: 2vw; row-gap: 2.5vh; 
-    grid-template-columns: 47vw 47vw;
-    grid-template-rows: 36vh 36vh 18vh;
-    grid-template-areas:
-        'animation1 text1'
-        'text2 animation2'
-        'footer footer';
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "animation_1 text_1"
+        "text_2 animation_2"
+        "footer footer";
 }
+
+.section {
+    height: 500px; 
+    width: 47vw
+}
+#animation1 { grid-area: animation_1; }
+#text1 { grid-area: text_1; }
+#text2 { grid-area: text_2; }
+#animation2 { grid-area: animation_2;  }
+#footer { grid-area: footer;  }
 
 #header {
     display: flex; 
@@ -35,11 +40,10 @@ body {
     top: 0; margin-top: 0%;
     background-color: #1E90FF; color: #FFF5EE;
     width: 100vw; height: auto;
-
 }
 
 #footer {
-    text-align: center; width: 100vw;z
+    text-align: center; width: 100vw;
 }
 
 #navbar {
@@ -60,8 +64,9 @@ ul {
 }
 
 #animation1, #animation2 { 
-    display: block;
+    z-index: -1;
     position: relative; 
+    background-color: blanchedalmond;
 }
 
 h4, h5, h6 {
