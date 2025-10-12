@@ -4,7 +4,7 @@
 
 body {
     display: block; 
-    width: 100vw; height: 100vh; 
+    width: 100vw; height: auto; 
     margin: 0; border: 0; padding: 0; 
     font-family:"Lato", sans-serif;
     font-size: 1.5rem;
@@ -12,7 +12,7 @@ body {
 }
 #page {
     margin: 0 0; 
-    width: 100vw; height: 100vh; 
+    width: 100vw; height: auto; 
     display: contents; 
 }
 
@@ -22,7 +22,7 @@ body {
     position: fixed;
     top: 0; margin-top: 0%;
     background-color: #4169E1; color: #FFF5EE;
-    width: 100vw; height: 125px; 
+    width: 100%; height: 125px; 
     z-index: 1;
 }
 
@@ -33,12 +33,12 @@ body {
 
 #menu {
     transform: translateY(125px);
-    width: 100vw; height: 55vh; 
+    width: 100%; height: 55vh; 
     background-color: #1E90FF; color: #FFF5EE;
     display: grid; 
     grid-column-gap: 2vw;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 55vh; 
+    grid-template-rows: 55%; 
     grid-template-areas: 
         "img desc works";
 
@@ -56,14 +56,8 @@ body {
 
 .wada {
     grid-area: animation;
-    height: 400px; 
-    transform: translateY(50px); 
-}
-
-.image-overlap-1 {
-  grid-column: 1 / 3; /* Span across columns */
-  grid-row: 1 / 3; /* Span across rows */
-  z-index: 1;
+    height: 20vw; 
+    transform: translateY(50px) translateX(25px); 
 }
 
 .wada_desc { grid-area: desc;}
@@ -78,7 +72,7 @@ body {
 #navbar {
     position: relative; 
     list-style-type: none;
-    width: 10vw; 
+    width: 10%; 
 }
 
 a {
