@@ -12,5 +12,6 @@ body {
 .page {
     margin: 0; padding: 0; 
     display: grid; 
-    grid-column-gap: 
+    grid-column-gap: 1vh; 
+    
 }
