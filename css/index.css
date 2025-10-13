@@ -23,6 +23,18 @@ body {
 
 #site_logo { grid-row: 1; grid-column: 1; }
 #site_name { grid-row: 1; grid-column: 2 / span 2;  }
-#site_navbar { grid-row: 1; grid-column: 4 / span 2; }
+#site_navbar { 
+    grid-row: 1; grid-column: 4 / span 2; 
+    font-size: 2rem; list-style-type: none;
+    display: flex; 
+}
 
+.page_link {
+    margin-right: 5vh; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit; background-color: inherit;
+}
 
