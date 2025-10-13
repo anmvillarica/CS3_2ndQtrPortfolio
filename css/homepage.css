@@ -32,21 +32,23 @@ body {
 }
 
 #menu {
-    transform: translateY(125px);
-    width: 100%; height: 55vh; 
+    transform: translateY(100px);
+    width: 100%; height: auto; 
     background-color: #1E90FF; color: #FFF5EE;
     display: grid; 
-    grid-column-gap: 2vw;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 55%; 
+    grid-column-gap: 2.5%;
+    grid-template-columns: 19% 38% 19%;
+    grid-row-gap: 0; 
+    grid-template-rows: auto; 
     grid-template-areas: 
         "img desc works";
 
 }
 
 #wada_animation { 
+    height: inherit; width: inherit; 
     grid-area: img;
-    position: static;   
+    position: static;  
     display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr; 
@@ -55,24 +57,25 @@ body {
 }
 
 .wada {
+    position: static; 
     grid-area: animation;
-    height: 20vw; 
-    transform: translateY(50px) translateX(25px); 
+    height: 30%;  
+    transform: translateY(50px); 
 }
 
-.wada_desc { grid-area: desc;}
-.works { grid-area: works; }
+.wada_desc { grid-area: desc; position: static; }
+.works { grid-area: works; position: static; }
 
 #footer {
     text-align: center; width: 100vw;
-    color: #4169E1;
-    transform: translateY(1000px);
+    color: #4169E1; 
+    transform: translateY(125px);
 }
 
 #navbar {
-    position: relative; 
+    position: static; 
     list-style-type: none;
-    width: 10%; 
+    width: 12%; 
 }
 
 a {
@@ -85,8 +88,7 @@ a {
 }
 
 h4, h5, h6 {
-    border-bottom: 2.5px solid #FFF5EE; 
-    padding-bottom: 50px; 
+    border-top: 2.5px solid #FFF5EE; 
     width: 80%;
     height: 0; 
 }
