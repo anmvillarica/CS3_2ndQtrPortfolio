@@ -32,10 +32,11 @@ body {
 #site_name { grid-row: 1; grid-column: 2 / span 2;  }
 
 #site_links {
+    margin-left: 0; padding-left: 0;
     justify-content: center;
     grid-row: 1; grid-column: 5;
     display: flex; 
-    gap: 5vh;
+    gap: 2.5vh;
     font-size: 2rem; 
     list-style-type: none;
 }
@@ -50,9 +51,9 @@ body {
 
 #change_animation { 
     grid-row: 4; grid-column: 3 / span 2; 
-    align-content: center; justify-content: center;
-    background-color: rgb(255, 143, 98); color: #FFF5EE; 
+    justify-content: center; align-content: center;
     text-align: center;
+    background-color: rgb(255, 143, 98); color: #FFF5EE; 
     font-family: "Bungee", sans-serif;
     font-weight: bolder; 
 }
@@ -96,5 +97,11 @@ a {
 h2, h3, h4, h5 {
     font-family: "Bungee", sans-serif;
     color: #4169E1; 
-    -webkit-text-stroke: #FFF5EE .25px;
+    text-shadow: #FFF5EE 2.5px 2px;
+}
+
+h1 {
+    font-family: "Bungee", sans-serif;
+    color: rgb(255, 143, 98);
+    -webkit-text-stroke: #FFF5EE .10px;
 }
