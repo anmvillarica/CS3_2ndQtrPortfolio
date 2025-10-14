@@ -40,13 +40,31 @@ body {
     list-style-type: none;
 }
 
+.wada_animation { position: relative; grid-row: 2 / span 2; grid-column: 1 / span 2; width: 100%; }
+.wada {position: absolute; width: 100%; }
+#wada_head {z-index: 4;}
+#wada_body {z-index: 2; animation: shake_arms 2s steps(1, end) infinite;}
+#wada_arm_in {z-index: 3; animation: shake_arms 2s steps(1, end) infinite;}
+#wada_arm_out {z-index: 1; animation: shake_arms 2s steps(1, end) infinite;}
+#wada_feet {z-index: 0; }
+
 #change_animation { 
-    grid-row: 4; grid-column: 1 / span 2; 
+    grid-row: 4; grid-column: 3 / span 2; 
     align-content: center; justify-content: center;
-    background-color: #4169E1; color: #FFF5EE; 
+    background-color: rgb(255, 143, 98); color: #FFF5EE; 
     text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-weight: bolder; 
 }
-.desc { grid-row: 2 / span 3; grid-column: 3 / span 2; }
+
+@keyframes shake_arms{
+    0% {transform: scaleX(1) rotate(0deg);}
+    33% {transform: scaleX(-1) rotate(0deg);}
+    66% {transform: scaleX(1) rotate(0deg);}
+    100% {transform: scaleX(-1) rotate(0deg);}
+}
+
+.desc { grid-row: 2 / span 2; grid-column: 3 / span 2; }
 
 .works {
     grid-row: 2 / span 6; grid-column: 5;
@@ -58,6 +76,8 @@ body {
     background-color: #4169E1; color: inherit; 
     padding: 10px;
     font-size: 5rem; 
+    font-family: "Bungee", sans-serif;
+    font-weight: bold; 
 }
 
 .footer {
@@ -70,4 +90,10 @@ a {
     text-decoration: none;
     color: inherit; background-color: inherit;
     padding: 0; margin: 0; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Bungee", sans-serif;
+    color: rgb(255, 143, 98); 
+    -webkit-text-stroke: #FFF5EE .5px;
 }
