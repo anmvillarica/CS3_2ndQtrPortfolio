@@ -94,27 +94,33 @@
     </div>
 
         <script>
+            let animation_types = ['shake_arms', 'lean'];
+            let wada_parts = ['wada_arm_in', 'wada_arm_out', 'wada_body', 'wada_head', 'wada_feet']; 
+
             // default animation
             let animation_number = 1; 
-            document.getElementById('wada_arm_in').classList.toggle('shake_arms'); 
-            document.getElementById('wada_arm_out').classList.toggle('shake_arms'); 
-            document.getElementById('wada_body').classList.toggle('shake_arms')
-            document.getElementById('wada_head').classList.toggle('shake_arms'); 
-            document.getElementById('wada_feet').classList.toggle('shake_arms'); 
+            
+            for (let i = 0; i < wada_parts.length; i++)
+                document.getElementById(`${wada_parts[i]}`).classList.toggle(`${animation_types[animation_number]}`); 
+            
 
             document.getElementById('change_animation').addEventListener('click', function() {
-                document.getElementById('wada_head').classList.toggle('lean'); 
-                document.getElementById('wada_feet').classList.toggle('lean'); 
-                document.getElementById('wada_body').classList.toggle('lean'); 
-                document.getElementById('wada_arm_in').classList.toggle('lean'); 
-                document.getElementById('wada_arm_out').classList.toggle('lean'); 
+                if (animation_number == 1)
+                    animation_number = 2; 
+                else 
+                    animation_number = 1; 
 
-                document.getElementById('wada_arm_in').classList.toggle('shake_arms'); 
-                document.getElementById('wada_arm_out').classList.toggle('shake_arms'); 
-                document.getElementById('wada_body').classList.toggle('shake_arms')
-                document.getElementById('wada_head').classList.toggle('shake_arms'); 
-                document.getElementById('wada_feet').classList.toggle('shake_arms'); 
+                changeWada(animation_number);
             });
+
+            function changeWada(animation_number) {
+
+                for (let i = 0; i < animation_types.length; i++)
+                {
+                    for (let j = 0; j < wada_parts.length; j++)
+                        document.getElementById(`${wada_parts[j]}`).classList.toggle(`${animation_types[i]}`); 
+                }
+            }
         </script>
 </body>
 
