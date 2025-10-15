@@ -18,16 +18,16 @@ body {
     grid-column-gap: .5vw; 
     grid-template-columns: 1fr 3fr 3fr 3fr 2fr;
     grid-row-gap: .5vh;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 0.5fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 /* top of page -------------------------------------------------*/ 
 .site_navbar { 
+    z-index: 6; background-color: #1E90FF;
     width: 100%; height: 100%; 
     grid-row: 1; grid-column: 1 / span 5; 
     display: grid; 
-    background-color: inherit;
-    display: grid;
+    position: sticky; top: 0;  
     grid-column-gap: 2vw;
     grid-template-columns: 1fr 3fr 3fr 3fr 2fr;
     align-content: center; justify-content: center;
