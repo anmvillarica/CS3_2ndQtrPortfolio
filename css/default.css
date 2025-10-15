@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0; padding: 0; 
+    width: 100vw; height: min-content; 
+    font-family:"Inter", sans-serif;
+    font-size: 1.5rem; 
+    background-color:#1E90FF; color: #FFF5EE;
+}
+
+.page {
+    width: 100%; height: 50%; 
+    margin: 0; padding: 2vw 2vw; 
+    display: grid; 
+    grid-column-gap: .5vw; 
+    grid-template-columns: 1fr 3fr 3fr 3fr 2fr;
+    grid-row-gap: .5vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* top of page -------------------------------------------------*/ 
+.site_navbar { 
+    width: 100%; height: 100%; 
+    grid-row: 1; grid-column: 1 / span 5; 
+    display: grid; 
+    grid-column-gap: 2vw;
+    grid-template-columns: 1fr 3fr 3fr 3fr 2fr;
+    align-content: center; justify-content: center;
+}
+
+#site_logo { grid-row: 1; grid-column: 1; width: 100%; align-content: center; justify-content: center;}
+#site_name { 
+    grid-row: 1; grid-column: 2 / span 2; 
+    font-family: "Bungee", sans-serif;
+    color: rgb(255, 143, 98);
+    -webkit-text-stroke: #FFF5EE .10px;
+    font-size: 4rem; }
+
+#site_links {
+    margin-left: 0; padding-left: 0;
+    justify-content: center;
+    grid-row: 1; grid-column: 5;
+    display: flex; 
+    gap: 2.5vh;
+    font-size: 2rem; 
+    list-style-type: none;
+}
+
+/* middle portion --------------------------------------------- */ 
+
+#activity_title {
+    grid-row: 2; grid-column: 2 / span 2; ;
+}
+
+.activity {
+    grid-row: 3; grid-column: 3 / span 2;
+}
+
+/* sidebar ----------------------------------------------------------*/ 
+.works {
+    grid-row: 2 / span 6; grid-column: 5;
+    align-content: top; 
+    text-align: center;
+}
+
+.work_link {
+    background-color: #4169E1; color: inherit; 
+    display: block; 
+    padding: 5px;
+    font-size: 5rem; 
+    font-family: "Bungee", sans-serif;
+    font-weight: bold; 
+    margin-bottom: 10px; margin-top: 10px;
+}
+
+/* bottom --------------------------------------------------------- */ 
+.footer {
+    grid-row: 5 / span 3; grid-column: 1 / span 4; 
+    color:#4169E1; background-color: #FFF5EE;
+    padding: 2vw;
+    display: grid; 
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: .5vw;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-row-gap: .5vw; 
+}
+
+.notes {
+    background-color: #4169E1; color: #FFF5EE;
+    grid-row: 1 / span 3; grid-column: 2;
+    padding: 0 15px;
+}
+
+.progress_info {
+    grid-row: 1; grid-column: 1; 
+}
+
+.social_list {
+    grid-row: 2; grid-column: 1; 
+}
+
+.social_list a {
+    text-decoration: underline;
+}
+
+.page_end {
+    grid-row: 3; grid-column: 1;
+}
+
+/* -------------------------------------------
+tag edits */ 
+a {
+    text-decoration: none;
+    color: inherit; background-color: inherit;
+    padding: 0; margin: 0; 
+}

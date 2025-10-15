@@ -76,7 +76,7 @@
                     </p>
                 </div>
 
-                <div class=""
+                <div class=""></div>
 
                 <div class="page_end">
                     <p class="copyright">
@@ -101,7 +101,7 @@
             let animation_number = 1; 
             
             for (let i = 0; i < wada_parts.length; i++)
-                document.getElementById(`${wada_parts[i]}`).classList.toggle(`${animation_types[animation_number]}`); 
+                document.getElementById(`${wada_parts[i]}`).classList.toggle(`${animation_types[animation_number - 1]}`); 
             
 
             document.getElementById('change_animation').addEventListener('click', function() {
