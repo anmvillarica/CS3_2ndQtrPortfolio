@@ -174,5 +174,10 @@ tag edits */
 a {
     text-decoration: none;
     color: inherit; background-color: inherit;
-    padding: 0; margin: 0; 
+    padding: 0; margin: 0;    
 }
+
+a:hover {
+  cursor: pointer;
+}
+
