@@ -1,0 +1,30 @@
+table {
+    grid-column: 1; grid-row: 1; 
+    table-layout:fixed; 
+    width: 100%; height: auto; 
+    color: inherit;
+    border-collapse: collapse; 
+    border-style: solid;
+    border-color: #FFF5EE;  
+}
+
+th, td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.rock_bobble_head:hover {
+    background-color: rgb(171, 94, 187);
+}
+
+.kilig:hover {
+    background-color: rgb(209, 87, 162);
+}
+
+.sway:hover {
+    background-color: rgb(62, 124, 218);
+}
+
+img {
+    width: 100%; height: auto;  
+}
