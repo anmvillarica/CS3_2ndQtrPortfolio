@@ -8,12 +8,35 @@
     <meta name="author" content="Arianna Nina M. Villarica">
 
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/q21g.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
 
     <title>Q2 1G</title>
     <link rel="icon" type="image/png" href="../media/images/wada/wada_favicon.png">
+
+    <style>
+          /* page specific */
+          .notes {
+            background-color: rgb(173, 68, 117);
+          }
+
+          .page {
+            background-color: rgb(173, 68, 117);
+            grid-template-rows: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+          }
+
+          .progress_info, .page_end, .social_list {
+            color: rgb(173, 68, 117);
+          }
+
+          #table_legend {
+            background-color: #FFF5EE; color:rgb(255, 143, 98); 
+            padding: 10px;
+            font-family: "Bungee", sans-serif;
+          }
+      </style>
 </head>
 
 <body>
@@ -30,32 +53,91 @@
         </nav>   
 
             <div class="activity">
-                <h1 id="activity_title"> 💌 1st Graded: My Music Taste! </h1>
+                <h1 id="activity_title">  </h1>
 
-                <p>Hello! This is Ianna! For this first graded activity, I'm gonna show you my embedding and table formatting skills 
-                    by showing you my music taste in several areas/genres of the world! 🦒 <br>
-                    I'll be listing down my favorite songs by Filipino, Western, and Japanese Artists! This list will be accompanied by the songs' respective artists, 
-                    vibes, and other information or notes that I find interesting or important. <br>
-                    Hope you enjoy! </p>
+                <p id="table_legend">
+                  <b>LEGEND (Hover):</b> 🎀 Pink - Kilig, 🔮 Light Purple - Rock/Bobble Head, 👖 Blue - Sway</p>
+                <table>
+                  <tr>
+                    <th width="10%">Album Cover</th>
+                    <th width="10%">Song Name</th>
+                    <th width="10%">Artist</th>
+                    <th width="25%">Video</th>
+                    <th width="10%">Vibes</th>
+                    <th width="30%">Review / Notes</th>
+                  </tr>
+
+                  <tr class="kilig">
+                    <td><img src="../media/images/q21g/ano.png"></td>
+                    <td>Anone</td>
+                    <td>Yuika, Arekun</td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5BczZ8OQh8TMM0WL7q806z?utm_source=generator" 
+                        width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    <td>Kilig</td>
+                    <td>AAAAAAAAAAAAA</td>
+                  </tr>
+
+                  <tr class="sway">
+                    <td><img src="../media/images/q21g/fir.png"></td>
+                    <td>Fireworks</td>
+                    <td>DAOKO, Kenshi Yonezo</td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7pcTLUekZJQnzDOUDuExVJ?utm_source=generator" 
+                        width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></iframe></td>
+                    <td>Sway</td>
+                    <td>THEIR VOICES ARE SO SDKFJALSDKFJSLADKJF</td>
+                  </tr>
+
+                  <tr class="kilig">
+                    <td><img src="../media/images/q21g/suk.png"></td>
+                    <td>Suki Dakara</td>
+                    <td>Yuika, Ren</td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0F6nGXMCUbtk8FiXvKi6HK?utm_source=generator" 
+                        width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    <td>Kilig</td>
+                    <td>The lyrics are so sweet, I swear. I LOVE THISS! "I want you to think of me" WAWWAWAWAWA</td>
+                  </tr>
+
+                  <tr class="kilig">
+                    <td><img src="../media/images/q21g/sni.png"></td>
+                    <td>Sniper</td>
+                    <td>Yuika</td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0taluMnYokviw9ujgOslXV?utm_source=generator" 
+                        width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    <td>Kilig</td>
+                    <td>The vibe is so cuteeeeeeee</td>
+                  </tr>
+
+                  <tr class="rock_bobble_head">
+                    <td><img src="../media/images/q21g/g_m_w.png"></td>
+                    <td>Good Morning World!</td>
+                    <td>BURNOUT SYNDROMES</td>
+                    <td><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/59Q0WRffEUOu0vhxArxCIG?utm_source=generator"
+                         width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    <td>Rock</td>
+                    <td>THIS IS FROM MY FAVORITE ANIME, DR. STONE!!!</td>
+                  </tr>
+
+                </table>
 
             </div>
 
             <div class="works">
                 <a href="./OPM_favorites.html" class="work_link">OPM</a>
-                <a href="" class="work_link">W</a>
-                <a href="" class="work_link">JP</a>
+                <a href="./Western_favorites.html" class="work_link">W</a>
+                <a href="./Japanese_favorites.html" class="work_link">JP</a>
             </div>
 
             <div class="footer">
                 <div class="notes">
                     <h3>📝 Extra Notes: </h3>
                     <hr>
+                    <p>I get kilig very easily...</p>
                 </div>
 
                 <div class="progress_info">
-                    <h3>Last updated: [date]</h3>
-                    <h3>Status: </h3>
-                    <h3>Special Thanks To: </h3>
+                    <h3>Last updated: October 15, 2025</h3>
+                    <h3>Status: Finished</h3>
+                    <h3>Special Thanks To: Tala Crisologo for keeping me sane <3</h3>
                 </div>
 
                 <div class="social_list">
