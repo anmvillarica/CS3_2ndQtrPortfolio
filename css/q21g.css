@@ -1,6 +1,9 @@
+.activity {
+    overflow-x: auto;
+}
+
 table {
     grid-column: 1; grid-row: 1; 
-    table-layout:fixed; 
     width: 100%; height: auto; 
     color: inherit;
     border-collapse: collapse; 
