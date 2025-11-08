@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ianna's Profile Card">
+    <meta name="description" content="Application of Java Script Events!">
     <meta name="author" content="Arianna Nina M. Villarica">
 
     <link rel="stylesheet" href="../css/default.css">
@@ -12,42 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
 
-    <title>Ianna's Profile Card</title>
+    <title>Name of Activity</title>
     <link rel="icon" type="image/png" href="../media/images/wada/wada_favicon.png">
-
-    <style>
-        #card {
-            display: flex; 
-            border: 5px solid #FFF5EE; border-radius: 10px;
-            width: 30vw; height: 70vh; 
-            background-color: rgb(255, 220, 67); color: #4169E1; 
-            margin: auto;  
-            text-align: center;
-            transition: background-color 0.3s; 
-        }
-
-        #card > img {
-            width: 100%; height: auto; 
-            margin: auto; 
-            align-content: center;
-        }
-
-        #card > div {
-            display: block; 
-            text-align: center;
-            align-content: center;
-        }
-        
-        #card > div > h2 {
-            font-size: 15vh;
-            margin: 0; padding: 0; 
-        }
-
-        #card:hover {
-            background-color: rgb(247, 133, 4);
-            transform: scale(110%);
-        }
-    </style>
 </head>
 
 <body>
@@ -64,30 +30,8 @@
         </nav>   
 
             <div class="activity">
-                <h1 id="activity_title">♣️ Personal Profile Card</h1>
-                <p>Click the Card To Reveal!</p>
-                
-                <div id="card">
-                    <img src='../media/images/wada/wada_logo.png' alt='card cover'>
-                </div>
-
-                <script>
-                    const card = document.getElementById('card');
-                    var onOrOff = 0; 
-
-                    card.addEventListener('click', function() {
-                        if (onOrOff == 0)
-                        {
-                            onOrOff = 1; 
-                            card.innerHTML = "<div><h2>IANNA</h2> <p><b>Hobbies:</b> Singing, Playing Instruments, Writing Songs <br> <b>Fun Fact!</b> The amount of times I sleep early is less than the amount of times I play guitar.</div>";
-                        }
-                        else
-                        {
-                            onOrOff = 0; 
-                            card.innerHTML = "<img src='../media/images/wada/wada_logo.png' alt='card cover'>";
-                        }
-                    })
-                </script>
+                <h1 id="activity_title"> Emoji Activity No. & Title </h1>
+            
             </div>
 
             <div class="works">
@@ -102,8 +46,8 @@
                 </div>
 
                 <div class="progress_info">
-                    <h3>Last updated: October 28, 2025</h3>
-                    <h3>Status: Finished</h3>
+                    <h3>Last updated: [date]</h3>
+                    <h3>Status: </h3>
                     <h3>Special Thanks To: </h3>
                 </div>
 
