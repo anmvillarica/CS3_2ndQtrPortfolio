@@ -7,11 +7,11 @@ body {
     margin: 0; padding: 0; 
     width: 100vw; height: min-content; 
     font-family:"Inter", sans-serif;
-    font-size: 1.5rem; 
-    background-color:#1E90FF; color: #FFF5EE;
+    font-size: 1.5rem; background-color:#1E90FF; color: #FFF5EE;
 }
 
 .page {
+    background-color:inherit;
     width: 100%; height: 50%; 
     margin: 0; padding: 2vw 2vw; 
     display: grid; 
@@ -23,7 +23,7 @@ body {
 
 /* top of page -------------------------------------------------*/ 
 .site_navbar { 
-    background-color: #1E90FF;
+    background-color: inherit;
     width: 100%; height: 100%; 
     grid-row: 1; grid-column: 1 / span 5;
     position: sticky; top: 0;  
