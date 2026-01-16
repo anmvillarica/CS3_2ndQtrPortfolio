@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ianna's First/Second Graded Activity">
+    <meta name="description" content="Application of Java Script Events!">
     <meta name="author" content="Arianna Nina M. Villarica">
 
     <link rel="stylesheet" href="../css/default.css">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
 
-    <title>Q2 1/2G</title>
+    <title>Ianna's JS Events Bonus!</title>
     <link rel="icon" type="image/png" href="../media/images/wada/wada_favicon.png">
 </head>
 
@@ -21,7 +21,7 @@
         <nav class="site_navbar" aria-label="Main navigation">
             <img src="../media/images/wada/wada_logo.png" alt="Q2 Logo of Wada the Penguin" id="site_logo">
 
-            <h1 id="site_name">1anna.port</h1>
+            <a href="../index.html"><h1 id="site_name">1anna.port</h1></a>
 
             <ul id="site_links">  
                 <li><a href="https://anmvillarica.github.io/CS3_1stQtrPortfolio/" class="page_link">Q1</a></li>
@@ -30,34 +30,29 @@
         </nav>   
 
             <div class="activity">
-                <h1 id="activity_title"> 💌 1st/2nd Graded: My Music Taste! </h1>
+                <h1 id="activity_title"> 💻 Bonus: Javascript Events ! </h1>
 
-                <p>Hello! This is Ianna! For this first graded activity, I'm gonna show you my embedding and table formatting skills 
-                    by showing you my music taste in several areas/genres of the world! 🦒 <br>
-                    I'll be listing down my favorite songs by Filipino, Western, and Japanese Artists! This list will be accompanied by the songs' respective artists, 
-                    vibes, and other information or notes that I find interesting or important. <br>
-                    Hope you enjoy! </p>
+                <h1>Click anywhere to change the background-color!</h1>
+                
+                <div id="box" style="width:100px; height:100px; background:red;"></div>
 
             </div>
 
             <div class="works">
-                <a href="./OPM_favorites.html" class="work_link">OPM</a>
-                <a href="./Western_favorites.html" class="work_link">W</a>
-                <a href="./Japanese_favorites.html" class="work_link">JP</a>
+                <a href="" class="work_link"></a>
+                <a href="" class="work_link"></a>
             </div>
 
             <div class="footer">
                 <div class="notes">
                     <h3>📝 Extra Notes: </h3>
                     <hr>
-                    <p>This and the first graded are linked to the same file to not take up too much space and clutter the folders. :) <br>
-                    P.S. The table can horizontal scroll now <3! </p>
                 </div>
 
                 <div class="progress_info">
-                    <h3>Last updated: October 17, 2025</h3>
-                    <h3>Status: Finished</h3>
-                    <h3>Special Thanks To: Tala Crisologo! </h3>
+                    <h3>Last updated: [date]</h3>
+                    <h3>Status: </h3>
+                    <h3>Special Thanks To: </h3>
                 </div>
 
                 <div class="social_list">
@@ -81,6 +76,35 @@
                     </script> 
                 </div>
             </div>
+
+            <script>
+                const page = document.getElementsByClassName('')
+                    
+                document.body.onclick = changeColor; 
+
+                function changeColor() {
+                    var randomR = Math.floor(Math.random() * 256); 
+                    var randomG = Math.floor(Math.random() * 256);
+                    var randomB = Math.floor(Math.random() * 256); 
+                    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`; 
+                }
+
+                const box = document.getElementById("box");
+
+                box.onmouseover = changeColorScale;
+
+                function changeColorScale() {
+                    box.style.backgroundColor = "royalblue";
+                    box.style.transform = "scale(1.2)";
+                }
+
+                box.onmouseout = resetBox;
+                    
+                function resetBox() {
+                    box.style.backgroundColor = "red";
+                    box.style.transform = "scale(1)";
+                } 
+            </script>
 </body>
 
 </html>
